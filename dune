@@ -1,7 +1,6 @@
-(dirs :standard \ node_modules esy.lock)
-
 (melange.emit
  (target output)
  (alias react)
  (libraries app)
- (module_systems es6))
+ (module_systems
+  (es6 mjs)))

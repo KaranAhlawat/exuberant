@@ -11,7 +11,7 @@
     "format-check": "esy dune build @fmt",
     "build": "vite build",
     "preview": "vite preview",
-    "dev": "vite"
+    "dev": "vite --config vite.config.js"
   },
   "scriptsComments": {
     "dune": "# Run dune, OCaml's build tool",
@@ -26,8 +26,9 @@
     "dev": "# Runs a development server"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.0.0"
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "vite": "^5.4.0",

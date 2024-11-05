@@ -1,11 +1,15 @@
 import { defineConfig } from "vite";
 import melangePlugin from "vite-plugin-melange";
+import nodeResolve from "@rollup/plugin-node-resolve";
 
 export default defineConfig({
 	plugins: [
+		nodeResolve(),
 		melangePlugin({
-			buildCommand: "esy dune build",
-			watchCommand: "esy dune build --watch"
+      emitDir: "src",
+      buildTarget: "output",
+      buildCommand: "exit 0",
+			watchCommand: "esy dune build @react --watch"
 		})
 	]
 })
