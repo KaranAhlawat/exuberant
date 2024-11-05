@@ -1,0 +1,6 @@
+_build/
+_esy/
+dist/
+esy.lock/
+node_modules/
+exuberant.install

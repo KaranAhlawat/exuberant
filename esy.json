@@ -1,0 +1,21 @@
+{
+  "esy": {
+    "build": [ "dune build -p #{self.name}" ],
+    "buildsInSource": "_build"
+  },
+  "dependencies": {
+    "@opam/dune": "3.16.0",
+    "@opam/melange": "4.0.1-52",
+    "@opam/mlx": "0.9",
+    "@opam/ocamlmerlin-mlx": "0.9",
+    "@opam/reason-react": "0.15.0",
+    "@opam/reason-react-ppx": "0.15.0",
+    "ocaml": "^5.2.0"
+  },
+  "devDependencies": {
+    "@opam/ocamlformat": "0.26.2",
+    "@opam/ocaml-lsp-server": "1.19.0",
+    "@opam/odoc": "2.4.3",
+    "@opam/utop": "2.14.0"
+  }
+}

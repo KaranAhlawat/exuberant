@@ -1,0 +1,5 @@
+let[@react.component] make () =
+  let url = ReasonReactRouter.useUrl () in
+  match url.path with
+  | ["hi"] -> <h1>(React.string "Hi") </h1>
+  | _ -> <h1>(React.string "Bye")</h1>
