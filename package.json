@@ -26,12 +26,11 @@
     "dev": "# Runs a development server"
   },
   "dependencies": {
-    "@rollup/plugin-node-resolve": "^15.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
     "vite": "^5.4.0",
-    "vite-plugin-melange": "^3.9.0"
+    "@rollup/plugin-node-resolve": "^15.3.0"
   }
 }
