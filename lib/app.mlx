@@ -2,6 +2,6 @@ let () =
   match ReactDOM.querySelector "#root" with
   | Some el ->
     let root = ReactDOM.Client.createRoot el in
-    ReactDOM.Client.render root (<Index /> )
+    ReactDOM.Client.render root <Index />
   | None -> Js.Console.error "Failed to start React: couldn't find the #root element"
 ;;

@@ -1,16 +1,15 @@
 module Comp = struct
-  let [@react.component] make ~title ~path =
+  let[@react.component] make ~title ~path =
     <div>
-      <h1>
-      (React.string @@ title ^ " Page")
-      </h1>
+      <h1>(React.string @@ title ^ " Page")</h1>
       <a href="#" onClick=(fun _ -> ReasonReactRouter.push path)>(React.string path)</a>
     </div>
+  ;;
 end
 
-let [@react.component] make () =
+let[@react.component] make () =
   let url = ReasonReactRouter.useUrl () in
-  Js.log(url);
   match url.path with
-  | ["about"] -> <Comp title="About" path="/" />
+  | [ "about" ] -> <Comp title="About" path="/" />
   | _ -> <Comp title="Home" path="/about" />
+;;

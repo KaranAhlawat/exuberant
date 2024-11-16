@@ -1,6 +1,8 @@
 {
   "esy": {
-    "build": [ "dune build @react" ],
+    "build": [
+      "dune build @react"
+    ],
     "buildsInSource": "_build"
   },
   "dependencies": {
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@opam/ocamlformat": "0.26.2",
+    "@opam/ocamlformat-mlx": "0.26.2.0",
     "@opam/ocaml-lsp-server": "1.19.0",
     "@opam/odoc": "2.4.3",
     "@opam/utop": "2.14.0"
